@@ -3,19 +3,36 @@ from sqlalchemy.orm import Session
 from typing import List
 from app.models import HealthMetric, Patient, User
 from app.schemas import HealthMetricCreate, HealthMetric as HealthMetricSchema
+from app.schemas import HealthMetricResponse
 from app.dependencies import get_db
 from app.utils.roles import get_current_user
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-@router.get("/{patient_id}/metrics", response_model=List[HealthMetricSchema])
-def get_patient_metrics(patient_id: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
+@router.get("/{patient_id}/metrics", response_model=List[HealthMetricResponse])
+def get_patient_metrics(
+    patient_id: int,
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user)
+):
     patient = db.query(Patient).filter(Patient.id == patient_id, Patient.doctor_id == user.id).first()
     if not patient:
         raise HTTPException(status_code=404, detail="Patient not found")
 
-    metrics = db.query(HealthMetric).filter(HealthMetric.patient_id == patient_id).all()
+    metrics = (
+        db.query(HealthMetric)
+        .filter(HealthMetric.patient_id == patient_id)
+        .order_by(HealthMetric.created_at.desc())
+        .limit(10)  # ✅ Only return latest 10 records
+        .all()
+    )
+
     return metrics
+
 
 #   Create health metric for a patient
 @router.post("/", response_model=HealthMetricSchema)

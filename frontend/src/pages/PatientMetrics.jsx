@@ -10,7 +10,7 @@ const PatientMetrics = () => {
   useEffect(() => {
     const fetchMetrics = async () => {
       try {
-        const response = await axios.get(`/patients/${id}/metrics`);
+        const response = await axios.get(`/health-metrics/${id}/metrics`);
         setMetrics(response.data);
       } catch (error) {
         console.error("Failed to fetch metrics:", error);
@@ -20,29 +20,67 @@ const PatientMetrics = () => {
     fetchMetrics();
   }, [id]);
 
+  const structuredData = metrics.reduce((acc, metric) => {
+    const existingRow = acc.find(row => row.created_at === metric.created_at);
+    if (existingRow) {
+      existingRow[metric.metric_type] = metric.value;
+    } else {
+      acc.push({
+        created_at: metric.created_at,
+        heart_rate: metric.metric_type === "heart_rate" ? metric.value : null,
+        respiration: metric.metric_type === "respiration" ? metric.value : null,
+        body_temperature: metric.metric_type === "body_temperature" ? metric.value : null,
+      });
+    }
+    return acc;
+  }, []);
+
   return (
     <Layout>
       <div className="max-w-4xl mx-auto mt-8">
         <h2 className="text-3xl font-extrabold mb-6 text-gray-800">
           Health Metrics
         </h2>
-        {metrics.length === 0 ? (
+
+        {structuredData.length === 0 ? (
           <p className="text-gray-500">No metrics available</p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {metrics.map((metric) => (
-              <div
-                key={metric.id}
-                className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-lg font-semibold text-gray-700 capitalize">
-                  {metric.metric_type}
-                </h3>
-                <p className="text-2xl font-bold text-blue-500 mt-2">
-                  {metric.value}
-                </p>
-              </div>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+              <thead>
+                <tr className="bg-blue-500 text-white">
+                  <th className="py-3 px-4 text-left">Timestamp</th>
+                  <th className="py-3 px-4 text-left">Heart Rate</th>
+                  <th className="py-3 px-4 text-left">Respiration</th>
+                  <th className="py-3 px-4 text-left">Body Temperature</th>
+                </tr>
+              </thead>
+              <tbody>
+                {structuredData.map((row, index) => (
+                  <tr
+                    key={index}
+                    className="border-b hover:bg-gray-100 transition"
+                  >
+                    <td className="py-3 px-4">{new Date(row.created_at).toLocaleString()}</td>
+                    <td className="py-3 px-4">
+                      {row.heart_rate !== null
+                        ? `${row.heart_rate} bpm`
+                        : "-"}
+                    </td>
+                    <td className="py-3 px-4">
+                      {row.respiration !== null
+                        ? `${row.respiration} breaths/min`
+                        : "-"}
+                    </td>
+                    <td className="py-3 px-4">
+                      {row.body_temperature !== null
+                        ? `${row.body_temperature} °C`
+                        : "-"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         )}
       </div>

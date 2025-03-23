@@ -57,6 +57,15 @@ class HealthMetric(HealthMetricBase):
     class Config:
         from_attributes = True
 
+class HealthMetricResponse(BaseModel):
+    id: int
+    metric_type: str
+    value: float
+    created_at: datetime.datetime
+
+    class Config:
+        from_attributes = True
+
 #   Alert Schemas
 class AlertBase(BaseModel):
     patient_id: int
