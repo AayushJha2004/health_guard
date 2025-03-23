@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alert System</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #b30000;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .emergency-icon {
+      font-size: 60px;
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #ff0000;
+      color: white;
+      font-size: 22px;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emergency-icon">⚠️</div>
+    <h1>Press Button to Alert the Patient's Home with an Alarm</h1>
+    <form action="/buzz" method="get">
+      <button class="button" type="submit">🚨 Emergency Press</button>
+    </form>
+  </div>
+</body>
+</html>
