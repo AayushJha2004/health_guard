@@ -239,11 +239,11 @@ class HealthKitManager {
             }
             
             dispatchGroup.notify(queue: .main) {
-//                print("ECG Data:")
-//                for data in dataToSendECG {
-//                    print(data)
-//                }
-//                self?.sendDataToServerStatic(data: dataToSendECG)
+                print("ECG Data:")
+                for data in dataToSendECG {
+                    print(data)
+                }
+                self?.sendDataToServerStatic(data: dataToSendECG)
             }
         }
         
