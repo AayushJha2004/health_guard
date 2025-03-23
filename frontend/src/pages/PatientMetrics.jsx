@@ -22,18 +22,28 @@ const PatientMetrics = () => {
 
   return (
     <Layout>
-      <div>
-        <h2 className="text-2xl font-bold mb-4">Health Metrics</h2>
+      <div className="max-w-4xl mx-auto mt-8">
+        <h2 className="text-3xl font-extrabold mb-6 text-gray-800">
+          Health Metrics
+        </h2>
         {metrics.length === 0 ? (
-          <p>No metrics available</p>
+          <p className="text-gray-500">No metrics available</p>
         ) : (
-          <ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {metrics.map((metric) => (
-              <li key={metric.id}>
-                {metric.metric_type}: {metric.value}
-              </li>
+              <div
+                key={metric.id}
+                className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-lg font-semibold text-gray-700 capitalize">
+                  {metric.metric_type}
+                </h3>
+                <p className="text-2xl font-bold text-blue-500 mt-2">
+                  {metric.value}
+                </p>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </Layout>
