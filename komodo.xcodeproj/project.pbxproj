@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		451138822D8F7B5100E5B4CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451138672D8F7B5000E5B4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4511386E2D8F7B5000E5B4CC;
+			remoteInfo = komodo;
+		};
+		4511388C2D8F7B5100E5B4CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451138672D8F7B5000E5B4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4511386E2D8F7B5000E5B4CC;
+			remoteInfo = komodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4511386F2D8F7B5000E5B4CC /* komodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = komodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		451138812D8F7B5100E5B4CC /* komodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = komodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4511388B2D8F7B5100E5B4CC /* komodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = komodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		451138A52D8FB4D900E5B4CC /* Exceptions for "komodo" folder in "komodo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4511386E2D8F7B5000E5B4CC /* komodo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		451138712D8F7B5000E5B4CC /* komodo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				451138A52D8FB4D900E5B4CC /* Exceptions for "komodo" folder in "komodo" target */,
+			);
+			path = komodo;
+			sourceTree = "<group>";
+		};
+		451138842D8F7B5100E5B4CC /* komodoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = komodoTests;
+			sourceTree = "<group>";
+		};
+		4511388E2D8F7B5100E5B4CC /* komodoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = komodoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4511386C2D8F7B5000E5B4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4511387E2D8F7B5100E5B4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451138882D8F7B5100E5B4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451138662D8F7B5000E5B4CC = {
+			isa = PBXGroup;
+			children = (
+				451138712D8F7B5000E5B4CC /* komodo */,
+				451138842D8F7B5100E5B4CC /* komodoTests */,
+				4511388E2D8F7B5100E5B4CC /* komodoUITests */,
+				451138702D8F7B5000E5B4CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		451138702D8F7B5000E5B4CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4511386F2D8F7B5000E5B4CC /* komodo.app */,
+				451138812D8F7B5100E5B4CC /* komodoTests.xctest */,
+				4511388B2D8F7B5100E5B4CC /* komodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4511386E2D8F7B5000E5B4CC /* komodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451138952D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodo" */;
+			buildPhases = (
+				4511386B2D8F7B5000E5B4CC /* Sources */,
+				4511386C2D8F7B5000E5B4CC /* Frameworks */,
+				4511386D2D8F7B5000E5B4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				451138712D8F7B5000E5B4CC /* komodo */,
+			);
+			name = komodo;
+			packageProductDependencies = (
+			);
+			productName = komodo;
+			productReference = 4511386F2D8F7B5000E5B4CC /* komodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		451138802D8F7B5100E5B4CC /* komodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451138982D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodoTests" */;
+			buildPhases = (
+				4511387D2D8F7B5100E5B4CC /* Sources */,
+				4511387E2D8F7B5100E5B4CC /* Frameworks */,
+				4511387F2D8F7B5100E5B4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451138832D8F7B5100E5B4CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				451138842D8F7B5100E5B4CC /* komodoTests */,
+			);
+			name = komodoTests;
+			packageProductDependencies = (
+			);
+			productName = komodoTests;
+			productReference = 451138812D8F7B5100E5B4CC /* komodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4511388A2D8F7B5100E5B4CC /* komodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4511389B2D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodoUITests" */;
+			buildPhases = (
+				451138872D8F7B5100E5B4CC /* Sources */,
+				451138882D8F7B5100E5B4CC /* Frameworks */,
+				451138892D8F7B5100E5B4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4511388D2D8F7B5100E5B4CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4511388E2D8F7B5100E5B4CC /* komodoUITests */,
+			);
+			name = komodoUITests;
+			packageProductDependencies = (
+			);
+			productName = komodoUITests;
+			productReference = 4511388B2D8F7B5100E5B4CC /* komodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		451138672D8F7B5000E5B4CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4511386E2D8F7B5000E5B4CC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					451138802D8F7B5100E5B4CC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4511386E2D8F7B5000E5B4CC;
+					};
+					4511388A2D8F7B5100E5B4CC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4511386E2D8F7B5000E5B4CC;
+					};
+				};
+			};
+			buildConfigurationList = 4511386A2D8F7B5000E5B4CC /* Build configuration list for PBXProject "komodo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 451138662D8F7B5000E5B4CC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 451138702D8F7B5000E5B4CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4511386E2D8F7B5000E5B4CC /* komodo */,
+				451138802D8F7B5100E5B4CC /* komodoTests */,
+				4511388A2D8F7B5100E5B4CC /* komodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4511386D2D8F7B5000E5B4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4511387F2D8F7B5100E5B4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451138892D8F7B5100E5B4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4511386B2D8F7B5000E5B4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4511387D2D8F7B5100E5B4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451138872D8F7B5100E5B4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		451138832D8F7B5100E5B4CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4511386E2D8F7B5000E5B4CC /* komodo */;
+			targetProxy = 451138822D8F7B5100E5B4CC /* PBXContainerItemProxy */;
+		};
+		4511388D2D8F7B5100E5B4CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4511386E2D8F7B5000E5B4CC /* komodo */;
+			targetProxy = 4511388C2D8F7B5100E5B4CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		451138932D8F7B5100E5B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your Health data to track your heart rate and provide personalized fitness insights.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		451138942D8F7B5100E5B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your Health data to track your heart rate and provide personalized fitness insights.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		451138962D8F7B5100E5B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = komodo/komodo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"komodo/Preview Content\"";
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = komodo/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your Health data to track your heart rate and provide personalized fitness insights.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		451138972D8F7B5100E5B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = komodo/komodo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"komodo/Preview Content\"";
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = komodo/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your Health data to track your heart rate and provide personalized fitness insights.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		451138992D8F7B5100E5B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/komodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/komodo";
+			};
+			name = Debug;
+		};
+		4511389A2D8F7B5100E5B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/komodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/komodo";
+			};
+			name = Release;
+		};
+		4511389C2D8F7B5100E5B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = komodo;
+			};
+			name = Debug;
+		};
+		4511389D2D8F7B5100E5B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH5P7K622G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = healthkit.komodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = komodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4511386A2D8F7B5000E5B4CC /* Build configuration list for PBXProject "komodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451138932D8F7B5100E5B4CC /* Debug */,
+				451138942D8F7B5100E5B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451138952D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451138962D8F7B5100E5B4CC /* Debug */,
+				451138972D8F7B5100E5B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451138982D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451138992D8F7B5100E5B4CC /* Debug */,
+				4511389A2D8F7B5100E5B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4511389B2D8F7B5100E5B4CC /* Build configuration list for PBXNativeTarget "komodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4511389C2D8F7B5100E5B4CC /* Debug */,
+				4511389D2D8F7B5100E5B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 451138672D8F7B5000E5B4CC /* Project object */;
+}
